@@ -1,0 +1,42 @@
+.App {
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  align-self: center;
+  font-size: 60px;
+  font-family: 'PT Mono', monospace;
+}
+
+.app-layout {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.hero-card {
+  width: 300px;
+  height: 500px;
+  border: 2px solid black;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 7px;
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-name {
+  font-size: 20px;
+  font-weight: bold;
+  margin: 15px 0;
+  align-self: center;
+}
+
+.image {
+  width: 300px;
+  height: 200px;
+}
+
+.hero-par {
+  line-height: 1.3em;
+}

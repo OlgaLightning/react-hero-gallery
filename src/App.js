@@ -1,23 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
+import './styles/App.css';
+import Hero from './components/Hero';
+import data from './Data.json';
 
 function App() {
+  const heroCard = data.map((hero, index) =>
+    <Hero url={hero.url} name={hero.name} universe={hero.universe} alterego={hero.alterego} occupation={hero.occupation} friends={hero.friends} superpowers={hero.superpowers} key={index} />
+  );
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1 className='header'>Супергерои</h1>
+      <div className='app-layout'>{heroCard}</div>
     </div>
   );
 }
